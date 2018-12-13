@@ -25,8 +25,25 @@ public class Aufrufe {
         lieblingsbuecher.add(new Book(352, date1, "Skulduggery Pleasant 3 - Die Diablerie bittet zum Sterben", "9783785574058"));
 
 
-        for(Book a : lieblingsbuecher){
+        for(Book a : lieblingsbuecher)
+        {
             System.out.println(a.getTitle()+ " hat "+ a.getPages()+ " Seiten und folgende ISBN: "+a.getIsbn());
         }
+
+
+        //zu Aufgabe 5 teil 2
+
+        List<Paperbook> paperbooks = new ArrayList<>();
+
+        paperbooks.add(new Paperbook(200, date1, "My Paperbook 1", "00000-000000-0000", "Serie 1", "April"));
+        paperbooks.add(new Paperbook(210, date1, "My Paperbook 2", "00000-000000-0000", "Serie 2", "April"));
+        paperbooks.add(new Paperbook(240, date1, "My Paperbook 3", "00000-000000-0000", "Serie 3", "January"));
+        paperbooks.add(new Paperbook(100, date1, "My Paperbook 4", "00000-000000-0000", "Serie 4", "March"));
+        paperbooks.add(new Paperbook(140, date1, "My Paperbook 5", "00000-000000-0000", "Serie 5", "October"));
+
+        for (Paperbook n : paperbooks){
+            System.out.println(n.getTitle()+ " hat "+ n.getPages()+" Seiten und folgende ISBN: "+ n.getIsbn()+ " zusätzlich ist es im Monat "+n.getMonth()+" erschienen");
+        }
     }
+
 }
