@@ -41,7 +41,7 @@ public class Aufrufe {
         paperbooks.add(new Paperbook(100, date1, "My Paperbook 4", "00000-000000-0000", "Serie 4", "March"));
         paperbooks.add(new Paperbook(140, date1, "My Paperbook 5", "00000-000000-0000", "Serie 5", "October"));
 
-        for (Paperbook n : paperbooks){
+        for (Paperbook n : paperbooks){ //Doppelpunkt weil "für jedes Buch in der Liste"
             System.out.println(n.getTitle()+ " hat "+ n.getPages()+" Seiten und folgende ISBN: "+ n.getIsbn()+ " zusätzlich ist es im Monat "+n.getMonth()+" erschienen");
         }
     }
