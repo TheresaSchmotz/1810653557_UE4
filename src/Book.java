@@ -20,7 +20,7 @@ public class Book {
         return released;
     }
 
-    public String getTiitle()
+    public String getTitle()
     {
         return title;
     }
